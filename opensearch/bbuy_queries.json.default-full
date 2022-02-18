@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
   "bbuy_queries" : {
     "mappings" : {
       "properties" : {

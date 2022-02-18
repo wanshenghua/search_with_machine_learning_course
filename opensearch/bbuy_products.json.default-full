@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
   "bbuy_products" : {
     "mappings" : {
       "properties" : {
@@ -495,6 +498,7 @@
               "type" : "keyword",
               "ignore_above" : 256
             }
+
           }
         }
       }
