@@ -1,0 +1,204 @@
+{
+  "settings": {
+    "index.refresh_interval": "5s"
+  },
+  "bbuy_products" : {
+    "mappings" : {
+      "properties" : {
+        "@timestamp" : {
+          "type" : "date"
+        },
+        "@version" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "accessories" : {
+          "type" : "keyword"
+        },
+        "active" : {
+          "type" : "boolean"
+          }
+        },
+        "bestBuyItemId" : {
+          "type" : "keyword"
+        },
+        "bestSellingRank" : {
+          "type" : "integer"
+        },
+        "categoryLeaf" : {
+          "type" : "keyword"
+        },
+        "categoryPath" : {
+          "type" : "text"
+        },
+        "categoryPathCount" : {
+          "type" : "integer"
+        },
+        "categoryPathIds" : {
+          "type" : "keyword"
+        },
+        "class" : {
+          "type" : "text"
+          }
+        },
+        "classId" : {
+          "type" : "keyword"
+        },
+        "color" : {
+          "type" : "text"
+        },
+        "condition" : {
+          "type" : "keyword"
+        },
+        "customerReviewAverage" : {
+          "type" : "scaled_float",
+          "scaling_factor": 10
+        },
+        "customerReviewCount" : {
+          "type" : "integer"
+        },
+        "department" : {
+          "type" : "text"
+        },
+        "departmentId" : {
+          "type" : "keyword"
+        },
+        "depth" : {
+          "type" : "keyword" // to process unit inch symbol" in the value
+        },
+        "description" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "digital" : {
+          "type" : "boolean"
+        },
+        "features" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "frequentlyPurchasedWith" : {
+          "type" : "keyword"
+        },
+        "height" : {
+          "type" : "keyword" // to process unit inch symbol" in the value
+        },
+        "homeDelivery" : {
+          "type" : "boolean"
+        },
+        "image" : {
+          "type" : "keyword"
+        },
+        "inStoreAvailability" : {
+          "type" : "boolean"
+        },
+        "inStorePickup" : {
+          "type" : "boolean"
+        },
+        "longDescription" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "longDescriptionHtml" : {
+          "type" : "text"
+        },
+        "manufacturer" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "modelNumber" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "name" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "onSale" : {
+          "type" : "boolean"
+        },
+        "onlineAvailability" : {
+          "type" : "boolean"
+        },
+        "productId" : {
+          "type" : "keyword"
+        },
+        "quantityLimit" : {
+          "type" : "integer"
+        },
+        "regularPrice" : {
+          "type": "scaled_float",
+          "scaling_factor": 100
+        },
+        "relatedProducts" : {
+          "type" : "keyword"
+        },
+        "releaseDate" : {
+          "type" : "date"
+        },
+        "salePrice" : {
+          "type": "scaled_float",
+          "scaling_factor": 100
+        },
+        "salesRankLongTerm" : {
+          "type" : "integer"
+        },
+        "salesRankMediumTerm" : {
+          "type" : "integer"
+        },
+        "salesRankShortTerm" : {
+          "type" : "integer"
+        },
+        "shippingCost" : {
+          "type": "scaled_float",
+          "scaling_factor": 100
+        },
+        "shippingWeight" : {
+          "type": "scaled_float",
+          "scaling_factor": 100
+        },
+        "shortDescription" : {
+          "type" : "text",
+          "analyzer": "english"
+        },
+        "shortDescriptionHtml" : {
+          "type" : "text"
+        },
+        "sku" : {
+          "type" : "keyword"
+          }
+        },
+        "startDate" : {
+          "type" : "date"
+        },
+        "subclass" : {
+          "type" : "text",
+         "analyzer": "english"
+        },
+        "subclassId" : {
+          "type" : "keyword"
+        },
+        "tags" : {
+          "type" : "keyword"
+        },
+        "type" : {
+          "type" : "keyword"
+        },
+        "url" : {
+          "type" : "keyword"
+        },
+        "weight" : {
+          "type" : "keyword" // to process unit inch symbol" in the value
+        },
+        "width" : {
+           "type" : "keyword" // to process unit inch symbol" in the value
+        }
+      }
+    }
+  }
+}
